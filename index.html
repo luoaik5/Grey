@@ -34,7 +34,7 @@
   <div class="container">
     <div class="row col-10 mx-auto">
       <div class="card-group">
-        <div class="card border-0 bg-secondary rounded-3"><img class="object-fit-cover w-100 rounded-3" src="/img/photo.jpg" height="300px" alt=""/></div>
+        <div class="card border-0 bg-secondary rounded-3"><img class="object-fit-cover w-100 rounded-3" src="/img/myphoto.jpg" height="300px" alt=""/></div>
         <div class="card p-3 bg-transparent border-0 my-auto list-unstyled">
           <h5>嗨!我是Grey，很高興遇見你</h5>
           <hr/>
@@ -107,40 +107,25 @@
   
 
 -->
-<!--section#section_OTHER
-.container-fluid
-  .row.text-center
-    h5 其他作品
-  #carouselExampleControls4.carousel.slide(data-bs-ride='carousel')
-    .carousel-inner
-      .carousel-item
-        img.d-block.w-100(src='https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-6/271243337_10216426197086181_4982300477109229607_n.jpg?_nc_cat=108&_nc_rgb565=1&ccb=1-5&_nc_sid=0debeb&_nc_ohc=cA-xNuIHL5cAX84XqDq&_nc_ht=scontent.ftpe7-3.fna&oh=00_AT8e3KpzMMOKHORX1m1TRJTKzct-ciCPBEZLZZI_AYgwuQ&oe=61DACA6E' alt='...')
-      .carousel-item
-        img.d-block.w-100(src='https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.30808-6/271197622_10216426197206184_7698525747160028193_n.jpg?_nc_cat=105&_nc_rgb565=1&ccb=1-5&_nc_sid=0debeb&_nc_ohc=QtzSoI2iVC0AX9F0bHr&tn=B2GX8rfgmQpU6sXV&_nc_ht=scontent.ftpe7-4.fna&oh=00_AT8kiqGewOZZZD0q6iEQyXwDYORdfM7FEs6AaURWCvIgQA&oe=61DA675F' alt='...')
-      .carousel-item.active
-        img.d-block.w-100(src='https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.30808-6/271153797_10216426196846175_828670893342030751_n.jpg?_nc_cat=105&_nc_rgb565=1&ccb=1-5&_nc_sid=0debeb&_nc_ohc=hVZznE7-0gEAX-QEnF7&_nc_ht=scontent.ftpe7-4.fna&oh=00_AT-byCuEtPQCKt8pToWxgIXbct7uqSaHEfI5LN3RsVLahw&oe=61DACE1E' alt='...')     
-    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls4' data-bs-slide='prev')
-       span.carousel-control-prev-icon(aria-hidden='true')
-       span.visually-hidden Previous
-    button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls4' data-bs-slide='next')
-       span.carousel-control-next-icon(aria-hidden='true')
-       span.visually-hidden Next
--->
-<div class="container">
-  <div class="row row-cols-2 row-cols-lg-5">
-    <div class="item">
-      <p>123</p>
+<section id="section_OTHER">
+  <div class="container-fluid">
+    <div class="row">
+      <h5>其他作品</h5>
     </div>
-    <div class="item">
-      <p>123</p>
-    </div>
-    <div class="item">
-      <p>123</p>
-    </div>
-    <div class="item">
-      <p>456</p>
+    <div class="carousel slide col-md-10 mx-auto" id="carouselExampleControls4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img class="d-block w-100" src="/img/banner.png" alt="..."/></div>
+        <div class="carousel-item"><img class="d-block w-100" src="/img/dm.png" alt="..."/></div>
+        <div class="carousel-item"><img class="d-block w-100" src="/img/photo.png" alt="..."/></div>
+        <div class="carousel-item"><img class="d-block w-100" src="/img/photo2.png" alt="..."/></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev"><span class="bg-dark carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
     </div>
   </div>
+</section>
+<div class="container">
+  <div class="row row-cols-1 row-cols-lg-3"><img src="/img/banner.png" alt=""/><img src="/img/dm.png" alt=""/><img src="/img/photo.png" alt=""/><img src="/img/photo2.png" alt=""/></div>
 </div>
 <footer class="text-center mx-auto p-4" id="section_footer">
   <h5>聯絡資訊</h5>

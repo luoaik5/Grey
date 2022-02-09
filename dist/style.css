@@ -10,7 +10,7 @@ body {
   background-color: #e9e2c8;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
@@ -105,7 +105,7 @@ section#section_3 .carousel-inner {
 }
 
 footer {
-  color: #537479;
+  color: #e9e2c8;
   background-size: cover;
   background-color: #537479;
 }
