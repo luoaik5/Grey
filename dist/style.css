@@ -1,0 +1,102 @@
+@charset "UTF-8";
+html {
+  border: solid 5px #537479;
+}
+
+body {
+  font-family: 微軟正黑體, Noto Sans TC, sans-serif;
+  border: solid 3px #537479;
+  width: 100%;
+  background-color: #e9e2c8;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+h6 {
+  font-weight: 600;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.object-fit-fill {
+  object-fit: fill;
+}
+
+.user:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  font-size: 14px;
+}
+
+section {
+  padding: 80px 0px;
+  color: #537479;
+}
+
+nav.navbar.navbar-expand-md.navbar-light.fixed-top {
+  background-color: #537479;
+}
+nav.navbar.navbar-expand-md.navbar-light.fixed-top .navbar-brand {
+  color: #e9e2c8;
+}
+nav.navbar.navbar-expand-md.navbar-light.fixed-top a {
+  font-weight: 1000;
+  color: #e9e2c8;
+  font-size: 16px;
+  transition: 0.5s;
+}
+nav.navbar.navbar-expand-md.navbar-light.fixed-top a:hover {
+  transform: translate(0px, -3px);
+  color: #f07142;
+  font-weight: 700;
+}
+
+header {
+  color: #537479;
+  padding-top: 100px;
+  background-size: cover;
+  margin: 0 auto;
+}
+header img {
+  transform: rotate(-5deg);
+}
+
+section#section_work .card {
+  opacity: 90%;
+  background-color: #537479;
+  border-radius: 10px;
+  color: #FFF;
+}
+section#section_work .card .card-title {
+  letter-spacing: 0.05rem;
+}
+
+section#section_UI .carousel-inner {
+  border-radius: 20px;
+}
+
+section#section_2 {
+  background-color: #222;
+  color: white;
+}
+section#section_2 .carousel-inner {
+  border-radius: 20px;
+}
+
+section#section_3 .carousel-inner {
+  border-radius: 20px;
+}
+
+footer {
+  background-size: cover;
+  background-color: #537479;
+}
