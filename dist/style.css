@@ -68,7 +68,7 @@ section {
   transform: rotate(120deg);
   margin-top: 1500px;
   margin-left: 50px;
-  opacity: 50%;
+  opacity: 20%;
 }
 
 nav.navbar.navbar-expand-md.navbar-light.fixed-top {
