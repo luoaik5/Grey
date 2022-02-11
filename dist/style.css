@@ -119,6 +119,7 @@ section#section_work .card {
   border-radius: 10px;
   color: #537479;
   border: solid 3px #537479;
+  font-size: 12px;
 }
 section#section_work .card .card-title {
   letter-spacing: 0.05rem;

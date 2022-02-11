@@ -1,21 +1,36 @@
 @charset "UTF-8";
-* {
-  font-family: 微軟正黑體;
+html {
+  border: solid 5px #537479;
 }
 
 body {
-  border: solid 5px #55B6C9;
+  font-family: 微軟正黑體, Noto Sans TC, sans-serif;
+  border: solid 3px #537479;
   width: 100%;
-  background-image: linear-gradient(170deg, #fff 0%, #dbe3e9 20%, #c2e9fb 100%);
+  background-color: #e9e2c8;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h6 {
+  font-weight: 600;
 }
 
 .object-fit-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fit-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-fit-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .user:before {
@@ -25,102 +40,96 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 14px;
 }
 
-nav.navbar.navbar-expand-md.navbar-light.fixed-top {
-  background-color: rgba(255, 255, 255, 0.8);
+section {
+  padding: 80px 0px;
+  color: #537479;
+  z-index: 3;
 }
-nav.navbar.navbar-expand-md.navbar-light.fixed-top span {
-  color: #55B6C9;
+
+.box1 {
+  z-index: -2;
+  position: absolute;
+  margin: auto;
+  width: 20vw;
+  height: 20vw;
+  border: solid 8px #537479;
+  border-radius: 30px;
+  transform: rotate(30deg);
+  margin-top: 100px;
+  margin-left: 150px;
+  opacity: 60%;
+  background-color: #537479;
+}
+
+.box2 {
+  z-index: -3;
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  border: solid 8px #537479;
+  border-radius: 30px;
+  transform: rotate(70deg);
+  margin-top: 300px;
+  margin-left: 250px;
+  opacity: 10%;
+}
+
+.box3 {
+  z-index: -4;
+  position: absolute;
+  width: 70vw;
+  height: 70vw;
+  border: solid 10px #537479;
+  border-radius: 30px;
+  transform: rotate(120deg);
+  margin-top: 1500px;
+  margin-left: 50px;
+  opacity: 10%;
+}
+
+nav.navbar.navbar-expand-md.navbar-light.fixed-top {
+  background-color: #537479;
+}
+nav.navbar.navbar-expand-md.navbar-light.fixed-top .navbar-brand {
+  color: #e9e2c8;
 }
 nav.navbar.navbar-expand-md.navbar-light.fixed-top a {
   font-weight: 1000;
-  color: #55B6C9;
+  color: #e9e2c8;
   font-size: 16px;
   transition: 0.5s;
 }
 nav.navbar.navbar-expand-md.navbar-light.fixed-top a:hover {
   transform: translate(0px, -3px);
-  color: #ADADAD;
-  font-weight: 800;
+  color: #f07142;
+  font-weight: 700;
 }
 
 header {
-  color: #55B6C9;
+  color: #537479;
   padding-top: 100px;
   background-size: cover;
   margin: 0 auto;
 }
-header .container-fluid {
-  background-color: white;
-  padding-bottom: 50px;
-}
-header .container-fluid .row {
-  margin: auto;
-}
-header .container-fluid .text {
-  padding: 15px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: auto;
-}
-header .container-fluid h5 {
-  padding-top: 30px;
-  font-weight: 700;
-}
-header .container-fluid .photo {
-  background-image: url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-6/270037533_10216420328379467_6056554804128589491_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=GbURqpIMjIQAX9cVg-8&_nc_ht=scontent.ftpe7-3.fna&oh=00_AT-9891EXUnSmrmOv7x8LspFXH2T8bpgEpzPoJYiv9tbsA&oe=61D89409);
-  background-size: cover;
-  border-radius: 200px;
-  padding: 30px;
-  margin: auto;
-  width: 250px;
-  height: 250px;
+header img {
+  transform: rotate(-5deg);
+  border-radius: 30px;
 }
 
-section {
-  padding: 100px 0px;
+section#section_work .card {
+  opacity: 90%;
+  background-color: #e9e2c8;
+  border-radius: 10px;
+  color: #537479;
+  border: solid 3px #537479;
+  font-size: 12px;
 }
-section h5 {
-  font-weight: 800;
-}
-
-section#section_work .row {
-  margin: auto;
-}
-section#section_work .work, section#section_work .skill {
-  color: #FFF;
-  background-color: rgba(255, 255, 255, 0.1);
-  text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  margin: 20px auto;
-  padding: 40px;
-  border-radius: 20px;
-  background-color: #55B6C9;
-  opacity: 0.9;
-}
-section#section_work .work h5, section#section_work .skill h5 {
-  text-align: center;
-}
-section#section_work .work hr, section#section_work .skill hr {
-  height: 3px;
-  margin: 15px auto;
-}
-
-section#section_TAIWAN .carousel-inner {
-  border-radius: 20px;
-}
-
-section#section_DABUS {
-  background-color: #222;
-  color: white;
-}
-section#section_DABUS .carousel-inner {
-  border-radius: 20px;
-}
-
-section#section_CAKE .carousel-inner {
-  border-radius: 20px;
+section#section_work .card .card-title {
+  letter-spacing: 0.05rem;
 }
 
 footer {
+  color: #e9e2c8;
   background-size: cover;
-  background-color: #789cad;
+  background-color: #537479;
 }/*# sourceMappingURL=style.css.map */
