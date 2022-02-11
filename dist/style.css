@@ -115,9 +115,10 @@ header img {
 
 section#section_work .card {
   opacity: 90%;
-  background-color: #537479;
+  background-color: #e9e2c8;
   border-radius: 10px;
-  color: #f9faf0;
+  color: #537479;
+  border: solid 3px #537479;
 }
 section#section_work .card .card-title {
   letter-spacing: 0.05rem;
