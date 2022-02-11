@@ -35,10 +35,42 @@ h6
 section
   padding: 80px 0px
   color: $color_T
-
+  z-index: 3
   //border: solid 2px BLUE
-
-
+.box1
+  z-index: -2
+  position: absolute
+  margin: auto
+  width: 300px
+  height: 300px
+  border: solid 8px $color_T
+  border-radius: 30px
+  transform: rotate(30deg)
+  margin--top: 50px
+  margin--left: 50px
+  opacity: 80%
+  background-color: $color_T
+//.box2
+  z-index: -3
+  position: absolute
+  width: 800px
+  height: 800px
+  border: solid 8px $color_T
+  border-radius: 30px
+  transform: rotate(70deg)
+  margin-left: 250px
+  opacity: 10%
+.box3
+  z-index: -4
+  position: absolute
+  width: 1200px
+  height: 1200px
+  border: solid 10px $color_T
+  border-radius: 30px
+  transform: rotate(120deg)
+  margin-top: 1500px
+  margin-left: 50px
+  opacity: 50%
   
 nav.navbar.navbar-expand-md.navbar-light.fixed-top
   background-color: $color_T
@@ -63,6 +95,7 @@ header
 
   img 
     transform: rotate(-5deg)
+    border-radius: 30px
     
    
 //資料3格
@@ -73,7 +106,7 @@ section#section_work
     opacity: 90%
     background-color: $color_T
     border-radius: 10px
-    color:#FFF
+    color:#f9faf0
     .card-title
       letter-spacing: 0.05rem
     

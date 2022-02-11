@@ -40,6 +40,35 @@ h6 {
 section {
   padding: 80px 0px;
   color: #537479;
+  z-index: 3;
+}
+
+.box1 {
+  z-index: -2;
+  position: absolute;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border: solid 8px #537479;
+  border-radius: 30px;
+  transform: rotate(30deg);
+  margin--top: 50px;
+  margin--left: 50px;
+  opacity: 80%;
+  background-color: #537479;
+}
+
+.box3 {
+  z-index: -4;
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  border: solid 10px #537479;
+  border-radius: 30px;
+  transform: rotate(120deg);
+  margin-top: 1500px;
+  margin-left: 50px;
+  opacity: 50%;
 }
 
 nav.navbar.navbar-expand-md.navbar-light.fixed-top {
@@ -68,13 +97,14 @@ header {
 }
 header img {
   transform: rotate(-5deg);
+  border-radius: 30px;
 }
 
 section#section_work .card {
   opacity: 90%;
   background-color: #537479;
   border-radius: 10px;
-  color: #FFF;
+  color: #f9faf0;
 }
 section#section_work .card .card-title {
   letter-spacing: 0.05rem;

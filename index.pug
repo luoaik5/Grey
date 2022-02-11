@@ -15,7 +15,11 @@ link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.c
 link(rel='stylesheet' href='/dist/style.css')
 link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css')
 script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8' crossorigin='anonymous')
-  
+
+.box
+  .box1 
+  .box2
+  .box3
 nav.navbar.navbar-expand-md.navbar-light.fixed-top
   .container-fluid
     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarTogglerDemo01' aria-controls='navbarTogglerDemo01' aria-expanded='false' aria-label='Toggle navigation')
@@ -35,20 +39,22 @@ nav.navbar.navbar-expand-md.navbar-light.fixed-top
 
 header#header 
   .container
-    .row.col-10.mx-auto
+    .row.col-10.col-md-.mx-auto
       .card-group
-        .card.border-0.bg-secondary.rounded-3
-          img.object-fit-cover.w-100.rounded-3(src='/img/myphoto.jpg' height='300px' alt='')    
+        .card.border-0.bg-transparent
+          img.object-fit-cover.w-100(src='/img/myphoto.jpg' height='290px' alt='')    
         .card.p-3.bg-transparent.border-0.my-auto.list-unstyled
-          h5 嗨!我是Grey，很高興遇見你
+          .card-top.d-flex.flex-row-reverse.mx-auto.p-0
+            h5 嗨!我是Grey，很高興遇見你
+            img.mx-1(src='/img/favicon.ico' height='24px' width="24px")
           hr
-          li 居住於內湖，輔從平面轉職，疫情期間學會Figma及html、css簡單切版還有Bootstrap應用。
+          li 居住於內湖，輔從平面設計轉職UI，疫情期間買了線上課程學了Figma及html、css簡單切版還有Bootstrap應用。
           li 樂於學習和發現新事物，興趣是滑雪及手作，希望有機會能一起合作！
 
 
 section#section_work
   .container
-    .row.row-cols-1.row-cols-lg-3.g-3.p-1
+    .row.row-cols-1.row-cols-md-3.g-3.p-1
       .col
         .card.h-100.shadow-sm
           .card-body
@@ -74,24 +80,24 @@ section#section_work
             h6 影片編輯：After Effects、Premiere 
             h6 文書軟體：Word、Excel、PowerPoint
 
-//section#section_UI
+section#section_UI
   .container.col-12
     .row.text-center
-      h5 玩翻台灣(Web/mobile)
-      h6 結合玩吃住行，一個Web/mobile帶你玩翻台灣!
+      h5 UI作品
+      
     #carouselExampleControls1.carousel.slide(data-bs-ride='carousel')
       .carousel-inner
         .carousel-item
-          img.d-block.w-100(src='https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80' alt='...')
+          img.d-block.w-100(src='/img/banner.png' alt='...')
         .carousel-item
-          img.d-block.w-100(src='https://images.unsplash.com/photo-1644366667172-d8aab562c234?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80' alt='...')
+          img.d-block.w-100(src='/img/banner.png' alt='...')
         .carousel-item.active
-          img.d-block.w-100(src='https://images.unsplash.com/photo-1640622659208-98d70201f2da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80' alt='...')
+          img.d-block.w-100(src='/img/banner.png' alt='...')
       button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls1' data-bs-slide='prev')
-         span.carousel-control-prev-icon(aria-hidden='true')
+         span.bg-secondary.rounded-circle.opacity-25.carousel-control-prev-icon(aria-hidden='true')
          span.visually-hidden Previous
       button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls1' data-bs-slide='next')
-         span.carousel-control-next-icon(aria-hidden='true')
+         span.bg-secondary.rounded-circle.opacity-25.carousel-control-next-icon(aria-hidden='true')
          span.visually-hidden Next
 
     
@@ -116,14 +122,9 @@ section#section_OTHER
       button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls4' data-bs-slide='next')
          span.bg-secondary.rounded-circle.opacity-25.carousel-control-next-icon(aria-hidden='true')
          span.visually-hidden Next
-.container
-  .row.row-cols-1.row-cols-lg-3
-    img(src="/img/banner.png", alt="")
-    img(src="/img/dm.png", alt="")
-    img(src="/img/photo.png", alt="")
-    img(src="/img/photo2.png", alt="")
 
 
+  h5.text-center.mx-auto.p-4.mt-5 Thanks for watching.
 
 footer#section_footer.text-center.mx-auto.p-4
    
@@ -134,9 +135,4 @@ footer#section_footer.text-center.mx-auto.p-4
       hr
       p ©2022 by Grey with Bootstrp5
       
-    
-    //.col-12
-      a.btn.btn-success(href='mailto:awu150060@gmail.com') E-Mail
-      a.btn.btn-primary(href='https://pda.104.com.tw/profile/share/1YsEYRwW8Z37EAJkkMute9jTtL2Pf1e8') 104履歷
-
     

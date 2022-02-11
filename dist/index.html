@@ -17,6 +17,11 @@
 <link rel="stylesheet" href="/dist/style.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+<div class="box">
+  <div class="box1"> </div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+</div>
 <nav class="navbar navbar-expand-md navbar-light fixed-top">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><a class="bi bi-arrow-down-short"></a></button>
@@ -32,13 +37,15 @@
 </nav>
 <header id="header"> 
   <div class="container">
-    <div class="row col-10 mx-auto">
+    <div class="row col-10 col-md- mx-auto">
       <div class="card-group">
-        <div class="card border-0 bg-secondary rounded-3"><img class="object-fit-cover w-100 rounded-3" src="/img/myphoto.jpg" height="300px" alt=""/></div>
+        <div class="card border-0 bg-transparent"><img class="object-fit-cover w-100" src="/img/myphoto.jpg" height="290px" alt=""/></div>
         <div class="card p-3 bg-transparent border-0 my-auto list-unstyled">
-          <h5>嗨!我是Grey，很高興遇見你</h5>
+          <div class="card-top d-flex flex-row-reverse mx-auto p-0">
+            <h5>嗨!我是Grey，很高興遇見你</h5><img class="mx-1" src="/img/favicon.ico" height="24px" width="24px"/>
+          </div>
           <hr/>
-          <li>居住於內湖，輔從平面轉職，疫情期間學會Figma及html、css簡單切版還有Bootstrap應用。</li>
+          <li>居住於內湖，輔從平面設計轉職UI，疫情期間買了線上課程學了Figma及html、css簡單切版還有Bootstrap應用。</li>
           <li>樂於學習和發現新事物，興趣是滑雪及手作，希望有機會能一起合作！</li>
         </div>
       </div>
@@ -47,7 +54,7 @@
 </header>
 <section id="section_work">
   <div class="container">
-    <div class="row row-cols-1 row-cols-lg-3 g-3 p-1">
+    <div class="row row-cols-1 row-cols-md-3 g-3 p-1">
       <div class="col">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -84,29 +91,22 @@
     </div>
   </div>
 </section>
-<!--section#section_UI
-.container.col-12
-  .row.text-center
-    h5 玩翻台灣(Web/mobile)
-    h6 結合玩吃住行，一個Web/mobile帶你玩翻台灣!
-  #carouselExampleControls1.carousel.slide(data-bs-ride='carousel')
-    .carousel-inner
-      .carousel-item
-        img.d-block.w-100(src='https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80' alt='...')
-      .carousel-item
-        img.d-block.w-100(src='https://images.unsplash.com/photo-1644366667172-d8aab562c234?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80' alt='...')
-      .carousel-item.active
-        img.d-block.w-100(src='https://images.unsplash.com/photo-1640622659208-98d70201f2da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80' alt='...')
-    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls1' data-bs-slide='prev')
-       span.carousel-control-prev-icon(aria-hidden='true')
-       span.visually-hidden Previous
-    button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls1' data-bs-slide='next')
-       span.carousel-control-next-icon(aria-hidden='true')
-       span.visually-hidden Next
-
-  
-
--->
+<section id="section_UI">
+  <div class="container col-12">
+    <div class="row text-center">
+      <h5>UI作品</h5>
+    </div>
+    <div class="carousel slide" id="carouselExampleControls1" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item"><img class="d-block w-100" src="/img/banner.png" alt="..."/></div>
+        <div class="carousel-item"><img class="d-block w-100" src="/img/banner.png" alt="..."/></div>
+        <div class="carousel-item active"><img class="d-block w-100" src="/img/banner.png" alt="..."/></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev"><span class="bg-secondary rounded-circle opacity-25 carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next"><span class="bg-secondary rounded-circle opacity-25 carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+    </div>
+  </div>
+</section>
 <section id="section_OTHER">
   <div class="container-fluid">
     <div class="row text-center">
@@ -123,10 +123,8 @@
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next"><span class="bg-secondary rounded-circle opacity-25 carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
     </div>
   </div>
+  <h5 class="text-center mx-auto p-4 mt-5">Thanks for watching.</h5>
 </section>
-<div class="container">
-  <div class="row row-cols-1 row-cols-lg-3"><img src="/img/banner.png" alt=""/><img src="/img/dm.png" alt=""/><img src="/img/photo.png" alt=""/><img src="/img/photo2.png" alt=""/></div>
-</div>
 <footer class="text-center mx-auto p-4" id="section_footer">
   <h5>聯絡資訊</h5>
   <div class="container p-1">
@@ -135,8 +133,4 @@
     <hr/>
     <p>©2022 by Grey with Bootstrp5</p>
   </div>
-  <!--.col-12
-  a.btn.btn-success(href='mailto:awu150060@gmail.com') E-Mail
-  a.btn.btn-primary(href='https://pda.104.com.tw/profile/share/1YsEYRwW8Z37EAJkkMute9jTtL2Pf1e8') 104履歷
-  -->
 </footer>
